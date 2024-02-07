@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Jost-Medium";
+  src: url("fonts/Jost-Medium.woff2");
+}
+@font-face {
+  font-family: "Jost-Regular";
+  src: url("fonts/Jost-Regular.woff2");
+}
+@font-face {
+  font-family: "Jost-Thin";
+  src: url("fonts/Jost-Thin.woff2");
+}
+
+body {
+  background-color: #302c29;
+}
+h1 {
+  font-family: "Jost-Medium";
+  color: #f5f5f5;
+}
+h2 {
+  font-family: "Jost-Regular";
+}
+p {
+  color: #f5f5f5;
+  font-family: "Jost-Regular";
+  font-size: 1.5rem;
+}
+a {
+  color: #f5f5f5;
+  font-family: "Jost-Medium";
+}
+
+article {
+  background-color: #f5f5f5;
+  padding: 3%;
+  box-shadow: 0px 0px 10px 0px rgba(27, 27, 27, 0.188);
+}
+
+.sale_discount {
+  background-color: rgb(243, 70, 70);
+  padding: 5px;
+  border-radius: 10%;
+  color: aliceblue;
+  box-shadow: 0px 0px 10px 0px rgba(27, 27, 27, 0.493);
+}
+span {
+  font-family: "Jost-Medium";
+  font-size: 1.2rem;
+}
+.brand {
+  font-size: 1.5rem;
+}
+
+footer {
+  background-color: #12100e;
+  padding: 6% 2% 6% 2%;
+  margin-top: 10%;
+}
+button {
+  background-color: #302c29;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: #04aa6d;
+}
