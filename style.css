@@ -10,35 +10,63 @@
   font-family: "Jost-Thin";
   src: url("fonts/Jost-Thin.woff2");
 }
+@keyframes show {
+  0%{
+      transform: translateY(-50px);    
+      opacity: 0%;
+  }
+  100%{
+      opacity: 100%;
+  }
+  
+}
 
 body {
-  background-color: #302c29;
+  background-color: #FaFAFA;
+  
+}
+main{
+  margin: 0 8% 0 8%;
 }
 h1 {
   font-family: "Jost-Medium";
-  color: #f5f5f5;
+  color:#302c29;
+  animation-name: show;
+  animation-iteration-count: inherit;
+  animation-duration: 3s;
 }
 h2 {
   font-family: "Jost-Regular";
 }
 p {
-  color: #f5f5f5;
+  color:#302c29;
+  font-family: "Jost-Regular";
+  font-size: 1.5rem;
+  animation-name: show;
+  animation-iteration-count: inherit;
+  animation-duration: 3s;
+}
+.footer_p {
+  color:#FaFAFA;
   font-family: "Jost-Regular";
   font-size: 1.5rem;
 }
 a {
-  color: #f5f5f5;
+  color:#302c29;
   font-family: "Jost-Medium";
+  transition: 0.2s;
+}
+a:hover{
+  color: #04aa6d;
 }
 .read-more{
   color: #302c29;
-  text-decoration:underline;
+  
 }
 
 article {
-  background-color: #f5f5f5;
+  background-color: #FaFAFA;
   padding: 3%;
-  box-shadow: 0px 0px 10px 0px rgba(27, 27, 27, 0.188);
 }
 
 .hide{
@@ -47,9 +75,15 @@ article {
 
 .sale_discount {
   display: block;
-  background-color: rgb(243, 70, 70);
+  font-family: 'Jost-Medium';
+  text-align: center;
+  font-size: min(3vw, 24px);
+  background-color: #FAD316;
   padding: 5px;
-  color: aliceblue;
+  color:#302c29;
+}
+.price{
+  font-size: min(3vw, 12px);
 }
 span {
   font-family: "Jost-Medium";
@@ -80,11 +114,14 @@ button:hover {
 }
 
 .product_name{
+  font-size: min(3vw, 30px);
   color: #302c29;
 }
 
 .soldout{
-  background-color: cadetblue;
+  font-size: min(3vw, 12px);
+  background-color: #f5f5f5;
+  border:#302c29 solid;
   color: #302c29;
   z-index: 100;
 

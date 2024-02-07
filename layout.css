@@ -11,9 +11,11 @@ nav li {
 }
 .grid_container-3-4 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 100px;
-  margin: 5% 5% 0 5%;
+  grid-template-columns: repeat(auto-fit, minmax(30%, 30%));
+  justify-content: center;
+  animation-name: show;
+  animation-iteration-count: inherit;
+  animation-duration: 3s;
 }
 
 .products {
@@ -49,7 +51,22 @@ h2 {
   display: grid;
   grid-template-columns: minmax(0, 50%) minmax(0, 50%);
   margin: 0 10% 0 10%;
+  animation-name: show-from-left;
+  animation-iteration-count: inherit;
+  animation-duration: 3s;
 }
+
+@keyframes show-from-left {
+  0%{
+      transform: translateX(50px);    
+      opacity: 0%;
+  }
+  100%{
+      opacity: 100%;
+  }
+  
+}
+
 .product_image {
   width: 100%;
   place-self: stretch;
@@ -72,6 +89,7 @@ h2 {
   grid-template-rows: repeat(9, 1fr);
 }
 button {
+  font-size: 1.2rem;
   grid-row: 8;
 }
 li {
@@ -92,13 +110,28 @@ a {
   display: grid;
   grid-template-columns: 500px 500px;
   font-size: 3rem;
-  column-gap: 5%;
+  column-gap: 2%;
   row-gap: 20%;
+  animation-name: show;
+  animation-iteration-count: inherit;
+  animation-duration: 3s;
 }
+
+@keyframes show {
+  0%{
+      transform: translateY(-50px);    
+      opacity: 0%;
+  }
+  100%{
+      opacity: 100%;
+  }
+  
+}
+
 .category_style {
-  background: linear-gradient(#787878, #072033);
-  border-radius: 15px;
+  background: #ffffff;
   padding-left: 4%;
+  border-bottom:#302c29 solid 1px;
 }
 
 .product_description {
