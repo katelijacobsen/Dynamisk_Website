@@ -2,12 +2,18 @@
   margin: 0;
   padding: 0;
 }
-nav li {
-  display: block;
-  text-align: right;
-  padding: 14px 10px 20px 0px;
+header ul {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-around;
+  padding: 40px 0px 20px 0px;
   text-decoration: none;
   font-size: 1.8rem;
+  background-color: #FFFF;
+  z-index: 200;
+  position: sticky;
+  margin-bottom: 5%;
 }
 .grid_container-3-4 {
   display: grid;
