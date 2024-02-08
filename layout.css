@@ -165,7 +165,7 @@ a {
 
 }
 .soldout{
-  font-size: 3vw;
+  font-size: 1.5vw;
   grid-column: 2;
   grid-row: 1;
   place-self: center;
