@@ -4,11 +4,11 @@ const category = urlParams.get("category")
 document.querySelector("h1").textContent = category; 
 
 if (category){
-  fetch("https://kea-alt-del.dk/t7/api/products?category=" +category)
+  fetch("https://kea-alt-del.dk/t7/api/products?limit=69?category" +category)
   .then((res) => res.json())
   .then(showProducts);
 } else{
-  fetch("https://kea-alt-del.dk/t7/api/products")
+  fetch("https://kea-alt-del.dk/t7/api/products?limit=69")
   .then((res) => res.json())
   .then(showProducts);
 
@@ -42,7 +42,7 @@ function showProduct(product) {
 }
 
   
-  copy.querySelector(".read-more").setAttribute("href", `produkt.html?id=${product.id}`)
+  copy.querySelector(".read-more").setAttribute("href", `produkt.html?id=${product.id}`);
 //appender
   document.querySelector(".grid_container-3-4").appendChild(copy);
 }
