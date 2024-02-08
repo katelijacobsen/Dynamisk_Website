@@ -1,6 +1,8 @@
 const urlParams = new URLSearchParams(window.location.search);
 const category = urlParams.get("category")
 
+document.querySelector("h1").textContent = category; 
+
 if (category){
   fetch("https://kea-alt-del.dk/t7/api/products?category=" +category)
   .then((res) => res.json())
