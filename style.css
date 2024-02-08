@@ -67,7 +67,15 @@ a:hover{
 article {
   background-color: #FaFAFA;
   padding: 3%;
+  transition: 0.3s;
 }
+
+.product_name{
+  font-size: min(3vw, 30px);
+  color: #302c29;
+}
+
+
 
 .hide{
   display: none;
@@ -114,15 +122,12 @@ button:hover {
   background-color: #04aa6d;
 }
 
-.product_name{
-  font-size: min(3vw, 30px);
-  color: #302c29;
-}
+
 
 .soldout{
   font-size: min(3vw, 12px);
   background-color: #f5f5f5;
-  border:#302c29 solid;
+  border:#302c29 solid 2px;
   color: #302c29;
   z-index: 100;
 
