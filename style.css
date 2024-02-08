@@ -36,12 +36,12 @@ h1 {
   animation-duration: 3s;
 }
 h2 {
-  font-family: "Jost-Regular";
+  font-family: "Jost-Medium";
 }
 p {
   color:#302c29;
   font-family: "Jost-Regular";
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   animation-name: show;
   animation-iteration-count: inherit;
   animation-duration: 3s;
@@ -129,4 +129,10 @@ button:hover {
 }
 .image_soldout{
   filter: grayscale(420%);
+}
+
+
+.product_styledesc{
+  font-size: 1vw;
+  
 }
