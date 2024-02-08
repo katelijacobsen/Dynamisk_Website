@@ -4,7 +4,7 @@ const category = urlParams.get("category")
 document.querySelector("h1").textContent = category; 
 
 if (category){
-  fetch("https://kea-alt-del.dk/t7/api/products?limit=69?category" +category)
+  fetch("https://kea-alt-del.dk/t7/api/products?limit=69&category=" +category)
   .then((res) => res.json())
   .then(showProducts);
 } else{
