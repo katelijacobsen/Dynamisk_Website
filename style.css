@@ -74,7 +74,8 @@ article {
 }
 
 .sale_discount {
-  display: block;
+  display: grid;
+  place-self: start;
   font-family: 'Jost-Medium';
   text-align: center;
   font-size: min(3vw, 24px);

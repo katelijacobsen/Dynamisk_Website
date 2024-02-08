@@ -56,7 +56,6 @@ h2 {
 #product_item {
   display: grid;
   grid-template-columns: minmax(0, 50%) minmax(0, 50%);
-  margin: 0 10% 0 10%;
   animation-name: show-from-left;
   animation-iteration-count: inherit;
   animation-duration: 3s;
@@ -75,9 +74,9 @@ h2 {
 
 .product_image {
   width: 100%;
-  place-self: stretch;
-  object-fit: cover;
-  grid-row: 1/6;
+  place-self: start stretch;
+  object-fit:contain;
+  grid-row: 1/2;
   grid-column: 1/4;
 }
 
@@ -88,15 +87,16 @@ h2 {
   grid-template-rows: auto;
   place-self: start;
   margin-left: 5%;
+  border: #302c29 solid 2px;
+  padding: 2%;
 }
 
 .product_btn_grid {
-  display: grid;
-  grid-template-rows: repeat(9, 1fr);
+  margin: 5% 0 5% 0;
 }
 button {
   font-size: 1.2rem;
-  grid-row: 3;
+  grid-row: 2;
 }
 li {
   text-decoration: none;
@@ -161,13 +161,13 @@ a {
 .soldout_container{
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: 1fr 1fr 3fr 1fr 1fr;
   
 
 }
 .soldout{
+  font-size: 3vw;
   grid-column: 2;
-  grid-row: 4;
+  grid-row: 1;
   place-self: center;
   padding: 5%;
 }

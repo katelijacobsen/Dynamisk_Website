@@ -17,7 +17,9 @@ function showProduct(product){
     document.querySelector(".product_articletype").textContent = product.articletype;
     document.querySelector(".price").textContent = `${product.price} DKK`;
     document.querySelector(".basecolour").textContent = product.basecolour;
-    document.querySelector(".product_image").src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
+    document.querySelector(".product_description").innerHTML = product.description;
+    document.querySelector(".product_styledesc").innerHTML = product.styledesc;
+    document.querySelector(".product_image").src = `https://kea-alt-del.dk/t7/images/webp/1000/${product.id}.webp`;
 
     if(product.discount){
         document.querySelector(".sale_price").classList.add("sale_discount");
